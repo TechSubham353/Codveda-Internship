@@ -16,7 +16,7 @@ body {
     color: #222;
 }
 
-/* ================= HEADER ================= */
+
 
 header {
     width: 100%;
@@ -55,7 +55,7 @@ nav a:hover {
     color: #38bdf8;
 }
 
-/* ================= HERO ================= */
+
 
 .hero {
     min-height: 80vh;
@@ -111,7 +111,7 @@ nav a:hover {
     background: #7dd3fc;
 }
 
-/* ================= COMMON SECTION ================= */
+
 
 section {
     padding: 80px 8%;
@@ -123,7 +123,7 @@ section h2 {
     margin-bottom: 40px;
 }
 
-/* ================= FEATURES ================= */
+
 
 .features {
     background: white;
@@ -131,7 +131,7 @@ section h2 {
 
 .feature-container {
 
-    /* FLEXBOX */
+    
     display: flex;
     justify-content: center;
     align-items: stretch;
@@ -171,7 +171,7 @@ section h2 {
     line-height: 1.7;
 }
 
-/* ================= GALLERY ================= */
+
 
 .gallery-section {
     background: #f1f5f9;
@@ -179,7 +179,7 @@ section h2 {
 
 .gallery {
 
-    /* CSS GRID */
+    
     display: grid;
 
     grid-template-columns: repeat(3, 1fr);
@@ -215,7 +215,7 @@ section h2 {
     color: #64748b;
 }
 
-/* ================= CONTACT ================= */
+
 
 .contact {
     text-align: center;
@@ -229,7 +229,7 @@ section h2 {
     line-height: 1.7;
 }
 
-/* ================= FOOTER ================= */
+
 
 footer {
     background: #111827;
@@ -238,7 +238,7 @@ footer {
     padding: 25px;
 }
 
-/* ================= TABLET ================= */
+
 
 @media (max-width: 900px) {
 
@@ -259,7 +259,7 @@ footer {
     }
 }
 
-/* ================= MOBILE ================= */
+
 
 @media (max-width: 600px) {
 
