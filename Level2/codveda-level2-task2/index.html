@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskFlow - To-Do List</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="app">
+
+        <header>
+            <h1>TaskFlow</h1>
+            <p>Organize your day, one task at a time.</p>
+        </header>
+
+        <main>
+
+            <!-- Add Task -->
+            <div class="task-input">
+                <input
+                    type="text"
+                    id="taskInput"
+                    placeholder="Enter a new task..."
+                >
+
+                <button id="addBtn">Add Task</button>
+            </div>
+
+            <!-- Task List -->
+            <div class="task-area">
+
+                <div class="task-header">
+                    <h2>My Tasks</h2>
+
+                    <span id="taskCount">0 tasks</span>
+                </div>
+
+                <ul id="taskList"></ul>
+
+                <p id="emptyMessage">
+                    No tasks yet. Add your first task!
+                </p>
+
+            </div>
+
+        </main>
+
+        <footer>
+            <p>© 2026 TaskFlow | Codveda Internship</p>
+        </footer>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+<script src="script.js"></script>
