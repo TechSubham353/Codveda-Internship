@@ -1,0 +1,154 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f1f5f9;
+  min-height: 100vh;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+.card {
+  width: 100%;
+  max-width: 520px;
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 18px;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.12);
+}
+
+.card h1 {
+  font-size: 34px;
+  color: #222;
+  text-align: center;
+  margin-bottom: 30px;
+  line-height: 1.2;
+}
+
+.tabs {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 25px;
+}
+
+.tabs button {
+  flex: 1;
+  padding: 14px;
+  border: none;
+  border-radius: 9px;
+  background: #2563eb;
+  color: white;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+.tabs button.active {
+  background: #1d4ed8;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+input {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 9px;
+  background: #fff;
+  color: #222;
+  font-size: 16px;
+  outline: none;
+}
+
+input:focus {
+  border-color: #2563eb;
+}
+
+form button,
+.profile-section > button {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 9px;
+  background: #2563eb;
+  color: white;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+form button:hover,
+.profile-section > button:hover {
+  background: #1d4ed8;
+}
+
+.profile-section {
+  text-align: center;
+}
+
+.profile-section h2 {
+  font-size: 28px;
+  margin-bottom: 25px;
+  color: #222;
+}
+
+.profile {
+  margin: 20px 0;
+  padding: 18px;
+  background: #f1f5f9;
+  border-radius: 10px;
+  text-align: left;
+  color: #333;
+}
+
+.profile p {
+  margin-bottom: 10px;
+}
+
+.logout {
+  margin-top: 10px;
+  background: #dc2626 !important;
+}
+
+.logout:hover {
+  background: #b91c1c !important;
+}
+
+.message {
+  margin-top: 22px;
+  text-align: center;
+  color: #64748b;
+  font-size: 17px;
+  line-height: 1.5;
+  word-break: break-word;
+}
+
+@media (max-width: 600px) {
+  .app {
+    padding: 20px 12px;
+  }
+
+  .card {
+    padding: 25px 18px;
+  }
+
+  .card h1 {
+    font-size: 28px;
+  }
+
+  .tabs button {
+    font-size: 15px;
+  }
+}
