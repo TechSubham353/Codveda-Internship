@@ -1,18 +1,18 @@
-// Get HTML elements
+
 const taskInput = document.getElementById("taskInput");
 const addBtn = document.getElementById("addBtn");
 const taskList = document.getElementById("taskList");
 const taskCount = document.getElementById("taskCount");
 const emptyMessage = document.getElementById("emptyMessage");
 
-// Load tasks from Local Storage
+
 let tasks = JSON.parse(localStorage.getItem("tasks")) || [];
 
-// Display tasks when page loads
+
 renderTasks();
 
 
-// Add Task
+
 addBtn.addEventListener("click", addTask);
 
 taskInput.addEventListener("keypress", function (event) {
@@ -47,7 +47,7 @@ function addTask() {
 }
 
 
-// Display Tasks
+
 function renderTasks() {
 
     taskList.innerHTML = "";
@@ -101,7 +101,7 @@ function renderTasks() {
 }
 
 
-// Complete / Undo Task
+
 function toggleTask(id) {
 
     tasks = tasks.map(function (task) {
@@ -118,7 +118,6 @@ function toggleTask(id) {
 }
 
 
-// Edit Task
 function editTask(id) {
 
     const task = tasks.find(function (task) {
@@ -149,7 +148,7 @@ function editTask(id) {
 }
 
 
-// Delete Task
+
 function deleteTask(id) {
 
     const confirmDelete = confirm(
@@ -169,7 +168,7 @@ function deleteTask(id) {
 }
 
 
-// Update Task Count
+
 function updateTaskCount() {
 
     const total = tasks.length;
@@ -182,7 +181,7 @@ function updateTaskCount() {
 }
 
 
-// Save Tasks to Local Storage
+
 function saveTasks() {
 
     localStorage.setItem(
@@ -192,7 +191,7 @@ function saveTasks() {
 }
 
 
-// Protect against HTML injection
+
 function escapeHTML(text) {
 
     const div = document.createElement("div");
